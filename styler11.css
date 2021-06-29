@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@465&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", cursive;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2em;
+    align-items: center;
+    background: lightgreen;
+    background: radial-gradient( circle, lightskyblue 0%, lightsalmon 100%);
+}
+
+header {
+    margin-top: 1.2em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Comfortaa", cursive;
+    color: teal;
+}
+
+.score-btn,
+.next-btn,
+.restart-btn {
+    font-size: 1.1em;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background: tomato;
+    box-shadow: 1px 8px 5px 0 magenta;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid darkmagenta;
+}
+
+.next-btn:hover,
+.restart-btn:hover {
+    opacity: 0.6;
+}
+
+.restart-btn {
+    visibility: hidden;
+}
+
+.questions {
+    height: fit-content;
+    width: 80vw;
+    padding: 1.2em;
+    background: lightsalmon;
+    box-shadow: 0 8px 32px 0 magenta;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid darkmagenta;
+}
+
+.question {
+    font-size: 1.5em;
+    padding: 1.1em;
+    text-align: center;
+    font-weight: 550;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.4em;
+    justify-items: center;
+}
+
+.option {
+    height: 5vh;
+    width: 30vw;
+    display: flex;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 25px;
+    text-align: center;
+    background: lightskyblue;
+    box-shadow: 1px 5px 6px 0 goldenrod;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid goldenrod;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.option:hover {
+    opacity: 0.9;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.correct {
+    background: darkgreen
+}
+
+.wrong {
+    background: red;
+}
